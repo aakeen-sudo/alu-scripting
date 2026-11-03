@@ -6,7 +6,7 @@ import requests
 def number_of_subscribers(subreddit):
     """Return the total subscribers of a subreddit, or 0 if invalid."""
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
-    headers = {"User-Agent": "linux:alu.api_advanced:v1.0 (by aakeen-sudo)"}
+    headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64)"}
     try:
         response = requests.get(url, headers=headers,
                                 allow_redirects=False, timeout=10)
